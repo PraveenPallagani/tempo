@@ -122,8 +122,11 @@ function addLead() {
     $.ajax({
         type:'GET',
         // crossDomain:true,
-        url: 'https://www.zohoapis.in/crm/v2/Leads',
+        url: 'https://www.zohoapis.in/crm/v2/Leads/',
         headers: {
+            // 'Access-Control-Allow-Origin': '*',
+            // 'Access-Control-Allow-Methods': 'GET, POST, PATCH, PUT, DELETE, OPTIONS',
+            // 'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
             'Authorization':'Zoho-oauthtoken 1000.cb605c4f0edb551f493a30af91fb6d78.f5cbf09c823a09f4d8f193342f9fc29e',
         },
         // contentType: 'application/json',
