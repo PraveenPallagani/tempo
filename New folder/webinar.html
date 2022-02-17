@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kalvi Schools</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="Jobin Cleetus">
+  <link rel="icon" type="image/png" href="assets/imgs/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar sticky-top" style="z-index:10;">
+  <div class="container">
+    <div class="navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/imgs/kalvi-logo.png" class="navbar-logo" alt="Kalvi" />
+            </a>
+            </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="kalvi-advantage.html">Kalvi Advantage</a></li>
+                <li><a href="kalvi-schools.html">Kalvi Schools</a></li>
+                <li><a href="#">Partner with us</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Admissions</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="btn">Apply now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="page-container page-webinar">
+    <section class="banner-slider light_section static-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-7">
+                    <h2>
+                        Join us for a <span class="bigger-text">webinar</span> on the future of technology education. Discover Liberal Engineering and what it can do for your career.
+                    </h2>
+                </div>
+                <div class="col-sm-5">
+                    <h3 class="b-700">Registration Form</h3>
+                    <form id="webinarForm" name="sentMessage" novalidate="novalidate">	
+                        <div class="form-group">
+                            <input class="form-control" id="webinar_name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your first name." />
+                            <p class="help-block text-danger"></p>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" id="webinar_email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address." />
+                            <p class="help-block text-danger"></p>
+                          </div> 
+                          <div class="form-group">
+                            <input class="form-control" id="webinar_phone" type="tel" placeholder="Mobile Number" required="required" data-validation-required-message="Please enter your phone number"   />
+                            <p class="help-block text-danger"></p>
+                          </div>
+                          <div class="success"></div>
+                          <div id="success"></div>
+                        <button class="btn btn-border-white" id="sendFormButton" type="submit">Register now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-announcement">
+            <div class="container">
+                <!-- <h4 class="white-arrow">Admission announcements section</h4> -->
+            </div>
+        </div>
+
+    </section>
+
+    <section class="webinar_details top-90 bottom-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>
+                        <span class="red-text">Who</span> will attend the webinar?
+                    </h3>
+                    <p>
+                        12th-grade computer science students and their parents
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>
+                        <span class="red-text">Where</span> will the webinar happen?
+                    </h3>
+                    <p>
+                        Online - Zoom
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>
+                        <span class="red-text">When</span> is the webinar?
+                    </h3>
+                    <p>
+                        5:00 pm to 6:00 pm, Saturday, February 19, 2022
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>
+                        <span class="red-text">Is there</span> an entry fee?
+                    </h3>
+                    <p>
+                        No. The webinar is free of charge
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_kalvi top-90 bottom-90 light_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 class="b-900" data-aos="fade-right" data-aos-duration="700">
+                        About <span class="red-text">Kalvi</span>
+                    </h2>
+                    <h3 data-aos="fade-right" data-aos-duration="700">
+                        The Kalvi Liberal Engineering Program — <b>Transforming the outstanding into the elite</b>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <p data-aos="fade-left" data-aos-duration="700">
+                        Our goal at Kalvi is to help students achieve real-world readiness while they pursue their education in engineering. We do this through a holistic multidisciplinary curriculum that helps students build cognitive skills to thrive in tomorrow’s world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="webinar_speaker top-90 bottom-90">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-7">
+                    <h2>
+                        About the <span class="red-text">Speaker</span>
+                    </h2>
+                    <p>
+                        Rajesh Kumar is the Founder and CEO of Kalvi. His entrepreneurial journey started after graduating from IITM-K. Along his entrepreneurial journey, he has impacted and counselled millions of learners. With Kalvi, he is on a mission to disrupt the archaic and traditional engineering program with a work integrated Liberal Engineering degree and create the CEOs and CTOs of tomorrow.
+                    </p>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <img src="assets/imgs/rajesh.png" class="webinar_speaker_img" />
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+  
+
+<footer class="container-fluid text-center top-90 light_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="assets/imgs/kalvi-logo.png" class="logo-footer" />
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul>
+                            <li><a href="#"">About Us</a></li>
+                            <li><a href="#"">Admissions</a></li>
+                            <li><a href="#"">Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul>
+                            <li><a href="#"">Kalvi Schools</a></li>
+                            <li><a href="#"">Newsletters</a></li>
+                            <li><a href="#"">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-sm-6">
+                        <p class="text-left">
+                            Kalvi, Evolve Work Studio, <br>3rd floor, Graphite India Main Road, <br>EPIP Zone, Whitefield, <br>Bengaluru, 560048
+                        </p>
+                    </div>
+                    <div class="col-sm-6 footer-pull-data">
+                        <p class="pull-profile pull-cta" href="tel:+9943992020">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            Rajesh
+                        </p>
+                        <a class="pull-phone pull-cta" href="tel:+9943992020">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            9943992020
+                        </a>
+                        <a class="pull-email pull-cta" href="mailto:hr@kalvi.degree">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            reachUs@kalvi.degree
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-sm-3">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.youtube.com/c/Kalvidegree" target="_blank" class="social-youtube social-icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kalvidegree/" target="_blank" class="social-instagram social-icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/kalvidegree" target="_blank" class="social-linkedin social-icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="copyright-content light_section">
+            <p>© KALVI CAREER EDUCATION PRIVATE LIMITED</p>
+        </div>
+    </div>
+</footer>
+
+<div class="cta-container" style="z-index:11;">
+    <div class="pull-table desktop">
+        <p class="">Contact Us</p>
+    </div>
+    <!-- <div class="pull-table mobile">
+        <a href="tel:9943992020" class="">Contact Us</a>
+    </div> -->
+    <div class="pull-container" style="z-index:11;">
+        <!-- <p class="pull-profile pull-cta" href="tel:+9943992020">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Rajesh
+        </p>
+        <a class="pull-phone pull-cta" href="tel:+9943992020">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            9943992020
+        </a>
+        <a class="pull-email pull-cta" href="mailto:hr@kalvi.degree">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            reachUs@kalvi.degree
+        </a> -->
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">	
+            <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your first name." />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address." />
+                <p class="help-block text-danger"></p>
+              </div> 
+              <div class="form-group">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone number" required="required" data-validation-required-message="Please enter your phone number"   />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <p>Are you a parent or a student?</p>
+                <div class="form-radio">
+                  <input type="radio" id="parent" name="cperson" value="parent" checked>
+                  <label for="parent">Parent</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" id="student" name="cperson" value="student">
+                  <label for="student">Student</label>
+                </div>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="success"></div>
+              <div id="success"></div>
+            <button class="btn btn-arrow btn-red" id="sendMessageButton" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="mail/jqBootstrapValidation.js"></script>
+<script src="mail/contact_me.js"></script>
+
+</html>

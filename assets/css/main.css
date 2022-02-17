@@ -1,0 +1,1747 @@
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url("https://pinklemonadedigital.com/kalvi/assets/fonts/Satoshi-Variable.woff2") format("woff2"), url("https://pinklemonadedigital.com/kalvi/assets/fonts/Satoshi-Variable.woff") format("woff"), url("https://pinklemonadedigital.com/kalvi/assets/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+a {
+  color: #333333;
+  font-size: 17px;
+}
+
+.alert-success button {
+  margin-left: 10px;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-logo {
+  height: auto;
+  width: 150px;
+}
+
+.navbar-brand {
+  padding: 0;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-header {
+    width: 150px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
+  }
+  .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #myNavbar {
+    width: calc( 100% - 150px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc( 100% - 150px);
+            flex: 0 0 calc( 100% - 150px);
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #myNavbar:before, #myNavbar:after {
+    display: none;
+  }
+}
+
+.navbar {
+  margin-bottom: auto !important;
+  padding: 20px 10px;
+}
+
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar-nav > li {
+  margin-right: 10px;
+}
+
+.navbar-nav > li a {
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.navbar-nav > li a:hover {
+  background: transparent;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #ef3837;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ef3837;
+}
+
+.navbar-nav > li .btn:hover {
+  background-color: #ef3837;
+  color: #fff;
+}
+
+.navbar-right.navbar-nav > li {
+  margin-right: 0;
+}
+
+.navbar-right.navbar-nav > li a:hover {
+  -webkit-text-stroke-width: 0px;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.btn {
+  background-color: #ef3837;
+  color: #fff;
+  padding: 13px 25px !important;
+  border-radius: 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.light_section {
+  color: #fff;
+}
+
+.red-text {
+  color: #ef3837;
+}
+
+.black-text {
+  color: #333333;
+}
+
+.white-text {
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.banner-slider {
+  background-image: url(https://pinklemonadedigital.com/kalvi/assets/imgs/banner-bg.jpg);
+  background-size: cover;
+}
+
+.banner-slider .container {
+  height: calc(100vh - 100px);
+  max-height: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-slider .container .col-sm-8 {
+  position: inherit;
+}
+
+.banner-slider .container .mySwiper2 {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  width: 55%;
+}
+
+.banner-slider .swiper-pagination {
+  text-align: left;
+  bottom: 50px;
+}
+
+.banner-slider .btn-arrow:before {
+  background-color: #EF6968;
+}
+
+.swiper-img-slider {
+  width: 55%;
+  position: absolute;
+  right: -5%;
+  top: auto;
+  bottom: -150px;
+}
+
+.swiper-img-slider img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 85vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: right center;
+     object-position: right center;
+}
+
+.swiper-img-slider::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://pinklemonadedigital.com/kalvi/assets/imgs/triangle.png);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  left: -35%;
+}
+
+.swiper-img-slider:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+}
+
+.btn-arrow {
+  background-color: transparent;
+  text-transform: uppercase;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-arrow:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform: scaleX(0.5);
+          transform: scaleX(0.5);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: 0.5s ease-out all;
+  transition: 0.5s ease-out all;
+}
+
+.btn-arrow:after {
+  content: '';
+  width: 25px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/next-arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
+}
+
+.btn-arrow:hover {
+  color: #fff;
+}
+
+.btn-arrow:hover:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.btn-red:before {
+  background-color: #ef3837;
+  opacity: 1;
+}
+
+.btn-black {
+  color: #333333;
+}
+
+.btn-black:after {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.btn-black:before {
+  opacity: 1;
+}
+
+.btn-black:hover {
+  color: #333333;
+}
+
+.btn.text-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.white-arrow {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.white-arrow:after {
+  content: '';
+  width: 25px;
+  height: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/next-arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
+}
+
+.banner-announcement {
+  background-color: #000000;
+  padding: 20px 0;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-announcement .container {
+  height: auto;
+}
+
+.banner-announcement a, .banner-announcement h4 {
+  color: #fff;
+  max-width: 650px;
+}
+
+.banner-announcement h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.b-900 {
+  font-weight: 900;
+}
+
+.b-800 {
+  font-weight: 800;
+}
+
+.b-700 {
+  font-weight: 700;
+}
+
+.top-90 {
+  padding-top: 90px;
+}
+
+.bottom-90 {
+  padding-bottom: 90px;
+}
+
+.about_kalvi {
+  position: relative;
+  z-index: 1;
+}
+
+.about_kalvi:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/emblem.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 10% center;
+  z-index: -1;
+}
+
+.about_kalvi .col-sm-6:last-child {
+  margin-top: 200px;
+}
+
+.program_outline {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/program-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.program_outline h3 {
+  font-weight: 400;
+}
+
+.program_outline p {
+  font-weight: 600;
+}
+
+.program_outline .program-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  margin: 50px auto;
+}
+
+.program_outline .program-grid .program-grid-inner {
+  padding: 70px 30px;
+  background-color: #333333;
+  position: relative;
+  z-index: 1;
+}
+
+.program_outline .program-grid .program-grid-inner:not(:last-child):after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 60%;
+  background-color: #ef3837;
+  bottom: 0;
+  right: 0;
+}
+
+.program_outline .program-grid p {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+
+.program_outline .program-grid img {
+  width: 70px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+.program_model_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: -47px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 40px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 0;
+  -webkit-transform: none;
+          transform: none;
+  margin-top: auto;
+  display: block;
+  position: relative;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  left: auto;
+  right: auto;
+}
+
+.swiper-button-next {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/next-arrow.png");
+}
+
+.swiper-button-prev {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/next-arrow.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.program_model .container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.program_model .swiper {
+  overflow: visible;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.program_model .swiper .swiper-wrapper {
+  height: auto;
+}
+
+.program_model h3 {
+  font-weight: 400;
+}
+
+.program_model img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.program_model h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #ef3837;
+  padding: 20px 20px;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 85%;
+  margin: -20px auto 0;
+  z-index: 1;
+  position: relative;
+}
+
+.program_model .row {
+  margin-top: 10px;
+}
+
+.program_model .row .col-sm-4 {
+  margin-top: 40px;
+}
+
+.benefits {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/half-grid-png.png");
+  background-color: #ef3837;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/benefits.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  bottom: 0;
+  left: 0;
+}
+
+.benefits .col-sm-6:first-child p {
+  font-size: 19px;
+  max-width: 70%;
+}
+
+.benefits .benefits_point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ffffff2b;
+  margin-bottom: 25px;
+}
+
+.benefits .benefits_point:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.benefits .benefits_point img {
+  min-width: 60px;
+  width: 60px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.benefits .benefits_point p {
+  margin-bottom: 0;
+}
+
+.benefits .benefits_row {
+  max-width: 90%;
+  margin-left: auto;
+}
+
+.how-to-apply .row {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/apply-home.jpg");
+  background-size: cover;
+  background-position: left top;
+}
+
+.social_media_wall {
+  background-color: #F2F2F2;
+}
+
+footer {
+  background-color: #000000;
+}
+
+footer img {
+  -webkit-filter: brightness(20);
+          filter: brightness(20);
+  max-width: 150px;
+  margin-left: 0;
+  display: block;
+}
+
+footer li {
+  text-align: left;
+  list-style: none;
+  font-weight: 400;
+}
+
+footer li a {
+  color: #fff;
+}
+
+footer li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+footer .copyright-content {
+  padding: 70px 0px 40px;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social-icons li {
+  margin-bottom: 0 !important;
+}
+
+.social-icons li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-size: 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-youtube {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/yt.png");
+}
+
+.social-instagram {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/ig.png");
+}
+
+.social-linkedin {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/in.png");
+}
+
+.cta-container {
+  position: fixed;
+  z-index: 9;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 100%;
+  right: auto;
+  -webkit-transition: 5s ease all;
+  transition: 5s ease all;
+}
+
+.cta-container.open {
+  left: auto;
+  right: 0;
+}
+
+.pull-table {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  background-color: #ef3837;
+  padding: 10px 20px;
+  left: -65px;
+  cursor: pointer;
+}
+
+.pull-table p, .pull-table a {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.pull-container {
+  background: #ffffff;
+  padding: 60px 50px;
+  border-radius: 5px 0px 0px 5px;
+  min-height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.pull-container input, .pull-container textarea {
+  min-width: 300px;
+}
+
+form .btn {
+  color: #333333;
+}
+
+form .btn:after {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+form .btn:hover {
+  color: #333333;
+}
+
+.pull-table.mobile {
+  display: none;
+}
+
+.pull-cta {
+  font-size: 17px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.pull-cta i {
+  color: #ef3837;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.pull-cta.pull-phone i {
+  font-size: 22px;
+}
+
+.pull-cta:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1170px;
+  }
+  .static-banner-text .btn-arrow {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-logo {
+    height: auto;
+    width: 100px;
+  }
+  .navbar {
+    padding: 15px 10px;
+    min-height: auto;
+  }
+  .navbar .container {
+    display: block;
+  }
+  .navbar .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-brand, .navbar-toggle {
+    float: none;
+    display: block;
+  }
+  .navbar-toggle {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-color: #ef3837;
+    margin-right: 0;
+    position: relative;
+    padding: 9px 10px;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #fff;
+    -webkit-transition: 0.35s ease all;
+    transition: 0.35s ease all;
+  }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  .navbar-nav > li {
+    margin-top: 15px;
+  }
+  .navbar-header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar-header:before, .navbar-header:after {
+    display: none;
+  }
+  .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translate(3px, -2px);
+            transform: rotate(-45deg) translate(3px, -2px);
+    -webkit-transform-origin: 30% 0%;
+            transform-origin: 30% 0%;
+  }
+  .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(2px, -3px);
+            transform: rotate(45deg) translate(2px, -3px);
+    -webkit-transform-origin: 10% 0%;
+            transform-origin: 10% 0%;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .banner-slider .container .mySwiper2 {
+    width: calc(95% - 20px);
+    left: 20px;
+    top: 20%;
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  .banner-slider .container .swiper-img-slider {
+    width: 75%;
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: 5%;
+  }
+  .banner-slider .swiper-pagination {
+    left: 20px;
+  }
+  .top-90 {
+    padding-top: 70px;
+  }
+  .bottom-90 {
+    padding-bottom: 70px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  .about_kalvi .col-sm-6:last-child {
+    margin-top: 20px;
+  }
+  .program_outline .program-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .program_outline .program-grid .program-grid-inner:not(:last-child):after {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: 0;
+  }
+  .program_model_nav {
+    top: -40px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    width: 30px;
+    margin-left: 15px;
+  }
+  .benefits {
+    background-image: none;
+    background-color: #ef3837;
+    padding-bottom: 300px;
+  }
+  .benefits .col-sm-6:last-child {
+    margin-top: 100px;
+  }
+  .benefits:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background: black;
+    top: 0;
+    left: 0;
+  }
+  .benefits:after {
+    width: 100%;
+    height: 300px;
+  }
+  .benefits .benefits_row {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .benefits .benefits_point img {
+    margin-left: auto;
+  }
+  .how-to-apply .row {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    background-position: center;
+  }
+  footer img {
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  footer .col-sm-3:not(:last-child), footer .col-sm-6, footer .col-sm-4:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  footer .social-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer ul {
+    padding-left: 10px;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .pull-table.to-x {
+    top: 2px;
+    left: auto;
+    right: -25px;
+  }
+  .btn {
+    font-size: 15px;
+    padding: 10px 20px !important;
+  }
+  .pull-table.mobile {
+    display: block;
+  }
+  .pull-table.desktop {
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    bottom: 0;
+    left: auto;
+    right: 10px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  .open .pull-container {
+    display: block;
+  }
+  .pull-table.mobile {
+    display: block;
+    -webkit-transform: none;
+            transform: none;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 10px;
+    min-width: 140px;
+  }
+  .pull-container {
+    display: none;
+  }
+  .cta-container {
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+  }
+  .program_outline .program-grid .program-grid-inner {
+    padding: 40px 30px;
+  }
+  .program_outline .program-grid {
+    margin: 30px auto;
+  }
+}
+
+.page-container {
+  position: relative;
+  z-index: 9;
+}
+
+.eapps-instagram-feed-posts-grid-load-more {
+  display: none;
+}
+
+.social_media_wall h2 {
+  margin-bottom: 30px;
+}
+
+.footer-pull-data i {
+  color: #fff;
+}
+
+.footer-pull-data a {
+  color: #fff;
+}
+
+.footer-pull-data p, .footer-pull-data a {
+  font-size: 16px;
+}
+
+.static-banner-text {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+  width: 55%;
+}
+
+.bigger-text {
+  display: block;
+  font-size: calc(100% + 25%);
+  line-height: 1.4;
+}
+
+.static-banner .swiper-img-slider::after {
+  left: -25%;
+}
+
+.student-advantage-grid .student-advantage-inner-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.student-advantage-grid .student-advantage-inner-grid:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+.student-advantage-grid .student-advantage-inner-grid img {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 20px;
+}
+
+.student-advantage-grid .student-advantage-inner-grid p {
+  margin-bottom: 0;
+}
+
+.student-advantage-grid .student-advantage-inner-grid:nth-child(2) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.student-advantage-grid .student-advantage-inner-grid:nth-child(2) img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.employee-advantage {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/half-grid-grey-png.png");
+  background-color: #ef3837;
+  background-size: cover;
+  background-position: center;
+}
+
+.employee-advantage .employee-advantage-out-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(65% - 30px) calc(35%);
+      grid-template-columns: calc(65% - 30px) calc(35%);
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.employee-advantage .employee-advantage-div-grid:nth-child(1) {
+  padding: 40px 20px;
+  background-color: #333333;
+}
+
+.employee-advantage .employee-advantage-div-grid:nth-child(2) {
+  padding: 40px 10px;
+  background-color: #EF3837;
+}
+
+.employee-advantage .employee-advantage-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+}
+
+.employee-advantage .employee-advantage-grid p {
+  margin-bottom: 0;
+}
+
+.employee-advantage .employee-advantage-img {
+  width: 100px;
+  height: 65px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 20px;
+}
+
+.engineering-programs h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.engineering-programs .engineering-programs-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+
+.engineering-programs .row .col-sm-6:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.engineering-programs .engineering-programs-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.engineering-programs .engineering-programs-grid img {
+  min-width: 90px;
+  width: 90px;
+  height: 90px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 20px;
+}
+
+.parernts-advantages .parent-advantage-grid {
+  min-height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  background-size: cover;
+  color: #fff;
+}
+
+.parernts-advantages .parent-advantage-grid p {
+  margin-bottom: 0;
+}
+
+.parernts-advantages .row {
+  margin-top: 40px;
+}
+
+.parernts-advantages .col-sm-4:nth-child(1) .parent-advantage-grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/adv_1.jpg");
+  background-position: right top;
+}
+
+.parernts-advantages .col-sm-4:nth-child(2) .parent-advantage-grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/adv_2.jpg");
+  background-position: right bottom;
+}
+
+.parernts-advantages .col-sm-4:nth-child(3) .parent-advantage-grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/adv_3.jpg");
+  background-position: right center;
+}
+
+.line-btn {
+  color: #ef3837;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.line-btn:hover, .line-btn:focus {
+  color: #ef3837;
+}
+
+.common-cta {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.common-cta p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .static-banner-text {
+    width: calc(95% - 20px);
+    left: 20px;
+    top: 20%;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+  }
+  .bigger-text {
+    display: block;
+    font-size: calc(100% + 15%);
+  }
+  .student-advantage-grid .student-advantage-inner-grid img {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-right: 10px;
+  }
+  .student-advantage-grid .student-advantage-inner-grid:nth-child(2) img {
+    margin-left: 10px;
+  }
+  .employee-advantage .container {
+    padding: 0;
+  }
+  .employee-advantage .employee-advantage-out-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 0;
+  }
+  .employee-advantage .employee-advantage-div-grid {
+    padding: 50px 30px !important;
+  }
+  .employee-advantage .employee-advantage-div-grid:nth-child(2) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .engineering-programs h2 {
+    font-size: 25px;
+  }
+  .engineering-programs .engineering-programs-grid img {
+    min-width: 70px;
+    width: 70px;
+    height: 70px;
+  }
+  .parent-advantage-grid {
+    margin-bottom: 20px;
+  }
+}
+
+.schools_program {
+  position: relative;
+  z-index: 1;
+}
+
+.schools_program h2 {
+  margin-right: 20px;
+}
+
+.schools_program .col-sm-6:nth-child(2) {
+  margin-top: 150px;
+}
+
+.schools_program .col-sm-6:nth-child(2) p {
+  font-size: 22px;
+}
+
+.schools_program:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/triangle.png");
+  background-size: contain;
+  background-position: 30% center;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.page-kalvi-advantage .banner-slider {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/advantage_banner.jpg");
+}
+
+.page-kalvi-schools .banner-slider {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/schools-bg.jpg");
+  background-color: #ef3837;
+}
+
+.kalvi_school_advantage {
+  background-color: #333333;
+}
+
+.kalvi_school_advantage .school_advantage_grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  background-size: cover;
+  max-height: -webkit-fill-available;
+}
+
+.kalvi_school_advantage .col-sm-3:nth-child(1) .school_advantage_grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/empower.jpg");
+}
+
+.kalvi_school_advantage .col-sm-3:nth-child(2) .school_advantage_grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/train.jpg");
+}
+
+.kalvi_school_advantage .col-sm-3:nth-child(3) .school_advantage_grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/aid.jpg");
+}
+
+.kalvi_school_advantage .col-sm-3:nth-child(4) .school_advantage_grid {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/free.jpg");
+}
+
+.kalvi_school_advantage .school_advantage_grid img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.the_outcome .row {
+  margin-top: 40px;
+}
+
+.the_outcome .row .col-sm-4 {
+  margin-bottom: 30px;
+}
+
+.the_outcome .row h3 {
+  color: #ef3837;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.the_outcome .row h3:before {
+  content: '';
+  display: block;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 50px solid #CCCCCC;
+}
+
+.the_outcome .row p {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: 15%;
+}
+
+.form-radio input {
+  min-width: auto;
+  margin-right: 5px;
+}
+
+form .btn {
+  padding: 10px 20px !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .schools_program .col-sm-6:nth-child(2) {
+    margin-top: 50px;
+  }
+}
+
+.page-about .banner-slider {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/about-banner-bg.jpg");
+}
+
+.about_about_kalvi {
+  position: relative;
+  z-index: 1;
+}
+
+.about_about_kalvi .col-sm-6 {
+  padding: 60px 30px 0;
+}
+
+.about_about_kalvi:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/emblem.png");
+  background-size: contain;
+  background-position: 25% center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.about_our_journey {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/our_jouney.jpg");
+  background-size: cover;
+}
+
+.about_our_journey .col-sm-6, .about_our_journey .col-sm-4 {
+  padding: 0 30px 0;
+}
+
+.about_our_vision h4 {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+
+.about_our_team {
+  background-color: #333333;
+}
+
+.about_our_team h2 {
+  margin-bottom: 30px;
+}
+
+.leadership_img {
+  margin-bottom: 20px;
+}
+
+.page-about .common-cta h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about_about_kalvi .col-sm-6 {
+    padding-top: 0;
+  }
+  .page-about .common-cta h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #706c6c !important;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #706c6c !important;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #706c6c !important;
+}
+
+.form-control::placeholder {
+  color: #706c6c !important;
+}
+
+.form-control {
+  font-size: 18px;
+  font-weight: 500;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 0;
+  color: #706c6c !important;
+}
+
+.btn-border-white {
+  font-weight: 700;
+  font-size: 19px;
+  color: #fff !important;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-top: 10px;
+}
+
+.page-webinar .banner-slider {
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/webinar-banner.jpg");
+  background-position: center;
+}
+
+.page-webinar .banner-slider .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-webinar .banner-slider .container h2 {
+  font-size: 35px;
+}
+
+.page-webinar .banner-slider .container h2 span {
+  display: inline-block;
+}
+
+.page-webinar .banner-slider .form-group {
+  margin-top: 20px;
+}
+
+.page-webinar .banner-slider .form-group input {
+  font-size: 20px;
+}
+
+.page-webinar .banner-slider ul {
+  color: #fff;
+}
+
+.page-webinar .about_kalvi {
+  background-color: #333333;
+}
+
+.page-webinar .about_kalvi:after {
+  opacity: 0.07;
+}
+
+.page-webinar .about_kalvi b {
+  font-weight: 800;
+}
+
+.webinar_details h3 {
+  font-weight: 800;
+}
+
+.webinar_details p {
+  font-weight: 600;
+}
+
+.webinar_details .col-sm-6:nth-child(3), .webinar_details .col-sm-6:nth-child(4) {
+  padding-top: 40px;
+}
+
+.webinar_speaker_img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.webinar_speaker {
+  position: relative;
+  z-index: 1;
+}
+
+.webinar_speaker:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://pinklemonadedigital.com/kalvi/assets/imgs/duo-triangle.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-webinar .banner-slider .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .page-webinar .banner-slider .container h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .page-webinar .banner-slider .container .form-group input, .page-webinar .banner-slider .container .btn-border-white {
+    font-size: 17px;
+  }
+  .page-webinar .banner-announcement .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .webinar_details .col-sm-6:nth-child(3), .webinar_details .col-sm-6:nth-child(4) {
+    padding-top: 0px;
+  }
+  .webinar_speaker_img {
+    max-width: 85%;
+    margin: 30px auto 0;
+    display: block;
+  }
+  .webinar_speaker:after {
+    width: 80%;
+    height: 60%;
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
